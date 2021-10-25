@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl: process.env.API_URL
+  apiUrl: 'https://strapi-2006f-1337.app.zerops.io/'
 };

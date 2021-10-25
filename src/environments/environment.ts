@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: ''
+  apiUrl: 'https://strapi-2006f-1337.app.zerops.io'
 };
 
 /*
