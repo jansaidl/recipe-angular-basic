@@ -2,7 +2,8 @@
 use: [ nodejs@14 ]
 # which commands to run to build
 run:
+  - sed -i -e 's/\$\$Z_API_URL\$\$/'"$api_zeropsSubdomain"'/g' src/environments/environment.prod.ts
   - npm i
-  - npm run build
+  - npm run build --prod
 # which files / folders to deploy after build
 deploy: [ 'dist/recipe-strapi-mongo-angular-gui/*' ]
