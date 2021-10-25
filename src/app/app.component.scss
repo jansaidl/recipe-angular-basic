@@ -1,0 +1,38 @@
+.__title {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 72px;
+  font-size: 45px;
+  line-height: 80px;
+  font-family: monospace;
+  text-align: center;
+}
+
+.__zerops {
+  display: inline-block;
+  color: #00b1a3;
+}
+
+.__tech {
+  display: inline-block;
+  color: #00b1a3bf;
+}
+
+.__quote-title {
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 22px;
+  opacity: 0.8;
+}
+
+.__quote {
+  padding: 24px;
+  background: #fff;
+  text-align: center;
+  opacity: 0.6;
+  font-family: monospace;
+  font-size: 20px;
+}
