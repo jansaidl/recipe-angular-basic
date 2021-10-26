@@ -6,7 +6,6 @@ import {
   catchError,
   share
 } from 'rxjs/operators';
-import { environment } from 'src/environments/environment';
 
 interface Quote {
   quote: string;
@@ -25,9 +24,13 @@ export class AppComponent implements OnInit {
   constructor(private _httpClient: HttpClient) {}
 
   ngOnInit() {
+    const regex = /^(https:\/\/)app-([^-.]+)(.*)$/gm;
+    const subst = `$1api-$2-1337$3`;
+    const url = window.location.href;
+    const apiUrl = url.replace(regex, subst);
     this._httpClient
       .post<Quote>(
-        `${environment.apiUrl}/quotes`,
+        `${apiUrl}/quotes`,
         {
           quote: '„Zerops has beautiful user interface“'
         }
