@@ -10,6 +10,7 @@ import { environment } from 'src/environments/environment';
 
 interface Quote {
   quote: string;
+  createdAt: string;
 }
 
 @Component({
@@ -19,7 +20,7 @@ interface Quote {
 })
 export class AppComponent implements OnInit {
 
-  quote: string;
+  quote: Quote;
 
   constructor(private _httpClient: HttpClient) {}
 
@@ -28,14 +29,14 @@ export class AppComponent implements OnInit {
       .post<Quote>(
         `${environment.apiUrl}/quotes`,
         {
-          quote: 'Zerops has beautiful user interface :)'
+          quote: '„Zerops has beautiful user interface“'
         }
       )
       .pipe(
         catchError(() => EMPTY),
         filter((d) => !!d),
         share()
-      ).subscribe((d) => this.quote = d.quote);
+      ).subscribe((d) => this.quote = d);
   }
 
 }

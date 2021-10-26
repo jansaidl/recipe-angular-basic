@@ -23,7 +23,7 @@
 .__quote-title {
   margin-bottom: 36px;
   text-align: center;
-  font-family: monospace;
+  font-family: sans-serif;
   font-size: 22px;
   opacity: 0.8;
 }
@@ -33,11 +33,30 @@
   background: #fff;
   text-align: center;
   opacity: 0.6;
-  font-family: monospace;
+  font-family: sans-serif;
   font-size: 20px;
+  font-style: italic;
 }
 
-.__tip {
-  font-size: 14px;
-  color: #00b1a3;
+.__checklist {
+  max-width: 410px;
+  margin: 0 auto;
+  margin-top: 48px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.__checklist-item {
+  margin-bottom: 12px;
+
+  .mat-checkbox {
+    margin-right: 4px;
+  }
+}
+
+.__author {
+  font-size: 12px;
+  opacity: 0.5;
+  vertical-align: bottom;
 }

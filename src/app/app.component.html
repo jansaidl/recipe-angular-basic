@@ -1,4 +1,29 @@
 <h1 class="__title">Welcome to <div class="__zerops">ZEROPS</div> recipe including <div class="__tech">Strapi</div>, <div class="__tech">MongoDB</div> and <div class="__tech">Angular</div> technologies</h1>
 
-<h2 class="__quote-title">Quote loaded from MongoDB</h2>
-<h3 class="__quote" *ngIf="!!quote">{{ quote }} <span class="__tip">(see console)</span></h3>
+<h2 class="__quote-title">Quote loaded from <div class="__tech">MongoDB</div></h2>
+
+<h3 class="__quote" *ngIf="!!quote">{{ quote.quote }}<span class="__author"> - ZEROPS, {{ quote.createdAt | date: 'medium' }}</span></h3>
+
+<div class="__checklist">
+
+  <h3 class="__checklist-title"><strong>Your next steps?</strong></h3>
+
+  <div class="__checklist-item">
+    <mat-checkbox>
+    </mat-checkbox>
+    Fork repository
+  </div>
+
+  <div class="__checklist-item">
+    <mat-checkbox>
+    </mat-checkbox>
+    Open build and deploy settings and connect
+  </div>
+
+  <div class="__checklist-item">
+    <mat-checkbox>
+    </mat-checkbox>
+    Push a new commit
+  </div>
+
+</div>
