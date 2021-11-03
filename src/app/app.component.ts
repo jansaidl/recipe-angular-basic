@@ -24,6 +24,7 @@ export class AppComponent implements OnInit {
   constructor(private _httpClient: HttpClient) {}
 
   ngOnInit() {
+    console.log(process);
     const regex = /^(https:\/\/)app-([^-.]+)([^\/]*).*$/gm;
     const subst = `$1api-$2-${process.env.apiPortNumber}$3`;
     const url = window.location.href;
