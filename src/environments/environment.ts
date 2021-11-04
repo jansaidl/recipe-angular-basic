@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiPortNumber: '1337'
+  apiUrl: '$ZEROPS_API_URL$'
 };
 
 /*
