@@ -3,6 +3,6 @@ use: [ nodejs@14 ]
 # which commands to run to build
 run:
   - npm i
-  - content=`cat src/environments/environment.ts`; apiUrl="${content/\$ZEROPS_API_URL\$/"${API_URL}"}"; export apiUrl; npm run build --prod
+  - npm run build --prod
 # which files / folders to deploy after build
 deploy: [ 'dist/recipe-strapi-mongo-angular-gui/*' ]
