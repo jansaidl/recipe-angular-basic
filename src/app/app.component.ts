@@ -10,6 +10,7 @@ import {
 interface Quote {
   quote: string;
   createdAt: string;
+  created_at: string;
 }
 
 @Component({

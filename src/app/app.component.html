@@ -2,7 +2,7 @@
 
 <h2 class="__quote-title">Quote loaded from <div class="__tech">database</div></h2>
 
-<h3 class="__quote" *ngIf="!!quote">{{ quote.quote }}<span class="__author"> - ZEROPS, {{ quote.createdAt | date: 'medium' }}</span></h3>
+<h3 class="__quote" *ngIf="!!quote">{{ quote.quote }}<span class="__author"> - ZEROPS, {{ (quote.createdAt ? quote.createdAt : quote.created_at) | date: 'medium' }}</span></h3>
 
 <div class="__checklist">
 
