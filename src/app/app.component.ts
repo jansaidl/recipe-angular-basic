@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
       .post<Quote>(
         `${apiUrl}/quotes`,
         {
-          quote: '„Zerops has beautiful user interface“'
+          quote: '„New features incoming to Zerops soon“'
         }
       )
       .pipe(
