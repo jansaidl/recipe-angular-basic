@@ -10,3 +10,4 @@ test1:
 
     # select which files / folders to deploy after the build is finished
     deploy: [ 'dist/recipe-strapi-mongo-angular-gui/*' ]
+  run:
