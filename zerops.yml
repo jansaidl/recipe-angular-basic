@@ -1,4 +1,4 @@
-test:
+test1:
   build:
     # select what technology your build uses
     base: [ nodejs@14 ]
