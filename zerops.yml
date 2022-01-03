@@ -1,8 +1,16 @@
-# select what technology your build uses
-use: [ nodejs@14 ]
-# which commands to run to build
-run:
-  - npm i
-  - npm run build --prod
-# which files / folders to deploy after build
-deploy: [ 'dist/recipe-strapi-mongo-angular-gui/*' ]
+test:
+  build:
+    # select what technology your build uses
+    base: [ nodejs@14 ]
+
+    # build your application
+    build:
+      - npm i
+      - npm run build --prod
+
+    # select which files / folders to deploy after the build is finished
+    deploy: [ 'dist/recipe-strapi-mongo-angular-gui/*' ]
+
+  run:
+    # start your application (NodeJS, GoLang only)
+    start: ./server
